@@ -1,0 +1,214 @@
+/* vietnamese */
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,600,700&display=swap');
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #660099, #5c009a, #51009c, #44009d, #33009f);
+  background-repeat: no-repeat;
+  color: #787878;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.app-grid-container {
+  width: 1244px;
+  height: 100vh;
+  margin: 40px auto 100px auto;
+  display: flow-root;
+}
+.app-grid-container .grid-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2.8em;
+  font-weight: lighter;
+  margin: 30px;
+}
+.app-grid-container .app-wrapper {
+  width: calc(20% - 40px);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  float: left;
+  margin: 20px 20px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.app-grid-container .app-wrapper.app-a {
+  background: #845EC2;
+}
+.app-grid-container .app-wrapper.app-b {
+  background: #5300C2;
+}
+.app-grid-container .app-wrapper.app-c {
+  background: #0056C2;
+}
+.app-grid-container .app-wrapper.app-d {
+  background: #FFC75F;
+}
+.app-grid-container .app-wrapper.app-e {
+  background: #008CA9;
+}
+.app-grid-container .app-wrapper.app-f {
+  background: #00A997;
+}
+.app-grid-container .app-wrapper.app-g {
+  background: #00A968;
+}
+.app-grid-container .app-wrapper.app-h {
+  background: #FF6F91;
+}
+.app-grid-container .app-wrapper.app-i {
+  background: #BA00DD;
+}
+.app-grid-container .app-wrapper.app-j {
+  background: #74DA44;
+}
+.app-grid-container .app-wrapper.app-k {
+  background: #D65DB1;
+}
+.app-grid-container .app-wrapper.app-l {
+  background: #39BE62;
+}
+.app-grid-container .app-wrapper.app-m {
+  background: #C0DD25;
+}
+.app-grid-container .app-wrapper.app-n {
+  background: #FF8066;
+}
+.app-grid-container .app-wrapper.app-o {
+  background: #FFCD49;
+}
+.app-grid-container .app-wrapper:nth-child(2) .app-action {
+  display: block;
+}
+.app-grid-container .app-wrapper .app-content {
+  text-align: center;
+}
+.app-grid-container .app-wrapper .app-content .app-icon {
+  margin: 20px 0;
+  height: 120px;
+  width: 120px;
+}
+.app-grid-container .app-wrapper .app-content .app-name {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: 0;
+}
+.app-grid-container .app-wrapper .app-action {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.app-grid-container .app-wrapper .app-action .action-content {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 30px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.app-grid-container .app-wrapper .app-action .action-content .trial {
+  font-size: 0.8em;
+  color: #ffffff;
+  margin: 5px;
+}
+.app-grid-container .app-wrapper .app-action .action-content .btn {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  display: inline-block;
+  color: #fff;
+  min-width: 120px;
+  margin: 5px;
+  cursor: pointer;
+}
+.app-grid-container .app-wrapper .app-action .action-content .btn.btn-info {
+  background: #0081CF;
+}
+.app-grid-container .app-wrapper .app-action .action-content .btn.btn-success {
+  background: #00C9A7;
+}
+.app-grid-container .app-wrapper .app-action:hover .action-content {
+  height: 120px;
+  transition: all 0.5s ease;
+}
+
+
+#country{
+    margin-top: 0px;
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 40px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .person{
+      margin-right: 30px;
+      color:whitesmoke;
+      
+  }
+  .person{
+    width: 5px;
+    height: 10px;
+    
+}
